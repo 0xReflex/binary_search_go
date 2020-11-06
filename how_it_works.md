@@ -7,12 +7,11 @@ There are 2 possible ways*
 2. You can just
 Check the middel term like in this it is 5 so you got it in just 1 move	but if you want the "" 7 ""th book.This is a example of binary search.
 
+#### .0 Take two terms one ""left"" as 0 starting of the list and other ""right"" at the end of the array.
 	| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
       ^               ^                    ^
 	  |               |                    |
 	  L               M                    R
-
-#### .0 Take two terms one ""left"" as 0 starting of the list and other ""right"" at the end of the array.
 
 #### .1 Check the middle term in this example it is 5.
 #### .2 Here 5 is not is equal to 7 so put left to middle that is 5.
