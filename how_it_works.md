@@ -3,9 +3,9 @@
 ## It works on a simple phenomena like~~ 
 *You have 10 books and you want the 5th book. How will you find it
 There are 2 possible ways*
-1. You start from 1,2,3,4 and then you willreach 5 **It will take you 5 moves``And thats a lot.``**
+1. You start from 1,2,3,4 and then you will reach 5 **It will take you 5 moves``And thats a lot.``**
 2. You can just
-Check the middel term like in this it is 5 so you got it in just 1 move	but if you want the "" 7 ""th book.This is a example of binary search.
+Check the middel term like in this example The middle term is 5 so you got it in just 1 move. But What if you want the "" 7 ""th book. Just do this again and you will get 7. Check the example given below.
 
 #### .0 Take two terms one ""left"" as 0 starting of the list and other ""right"" at the end of the array.
 	| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
