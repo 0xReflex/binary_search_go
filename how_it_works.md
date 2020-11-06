@@ -11,7 +11,6 @@ There are 2 possible ways*
 	but if you want the "" 7 ""th book
   	 ________________________________________
 	| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-	 ---------------------------------------- 
 	  |										|
 	  L 									R 
 	.0 Take two terms one ""left"" as 0 starting of the list and other ""right"" at the end of the array
@@ -21,15 +20,13 @@ There are 2 possible ways*
 	.2 Here 5 is not is equal to 7 so put left to middle that is 5
   	 ________________________________________
 	| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-	 ---------------------------------------- 
 	 				  |				       |
 	   				  L		        	   R 
 
 	.3 Now find the middle again like Left + Right/2 == 5 + 10 /2 = 7.5 
 	round 7.5 = 7
 	 _______________________________________
-	| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-	 ---------------------------------------- 
+	| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 
 	 				  |		  |	           |
 	   				  L		  M      	   R
 
