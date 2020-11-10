@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 	"time"
+	"sort"
 )
 
 func main() {
@@ -26,17 +27,24 @@ func random_array(length_of_array int) []int { // this will make random array
 	var random_array []int
 	for true{
 		if i == length_of_array{
-			return random_array
+			// fmt.Println(random_array)
+			return the_sorted_array(random_array)
 		}else {
-			rand.Seed(time.Now().UnixNano())
+			rand.Seed(time.Now().UnixNano() * int64(i))
 			random_array = append(random_array ,rand.Intn(length_of_array))
 			i++ 
 		}
 	}
-	return random_array
+	return the_sorted_array(random_array)
 }
 
-// func the_sorted_array(sorted_array []int, target int){} //this will make sorted array
+func the_sorted_array(sorted_array []int) []int{
+	time_for_sorting := time.Now()
+	sort.Ints(sorted_array)
+	fmt.Println(time.Since(time_for_sorting))
+	// fmt.Println(sorted_array)
+	return sorted_array
+} //this will make sorted array
 // see how_it_works to know how this program works :) 
 func binary_search(array []int, target int) int{//(int, string, int)
 	hops := 0
