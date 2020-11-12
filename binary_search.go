@@ -36,7 +36,7 @@ func random_array(length_of_array int) []int { // this will make random array
 }
 
 
-func remove_dublicate_from_array(random_array []int) []int{
+func remove_dublicate_from_array(random_array []int) []int{ // It will remove dulicate values 
 	safe_array ,map_of_the_array := []int{} ,make(map[int]bool)
 	for _, entry := range random_array { 
 		if _, value := map_of_the_array[entry]; !value { 
