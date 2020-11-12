@@ -9,13 +9,11 @@ import (
 
 func main() {
 	inputs_from_the_user()
-	// fmt.Println("total time taken: ", time.Since(t0))
 }
 
 func inputs_from_the_user() { // It will take inputs from the user
 	var target, length_of_array int
 	fmt.Println("what is the length of the array:")
-	// fmt.Println("Don't put large numbers or it will kill your pc and then you have to switch it off")
 	fmt.Scanln(&length_of_array)
 	fmt.Println("what is your target:")
 	fmt.Scanln(&target)
@@ -26,8 +24,7 @@ func random_array(length_of_array int) []int { // this will make random array
 	var i int
 	var random_array []int
 	for true{
-		if i == length_of_array{
-			// fmt.Println(random_array)
+		if i == length_of_array
 			return random_array
 		}else {
 			rand.Seed(time.Now().UnixNano() * int64(i))
@@ -43,7 +40,6 @@ func remove_dublicate_from_array(random_array []int) []int{
 	safe_array ,map_of_the_array := []int{} ,make(map[int]bool)
 	for _, entry := range random_array { 
 		if _, value := map_of_the_array[entry]; !value { 
-			// fmt.Println(value , entry)
 			map_of_the_array[entry] = true
 			safe_array = append(safe_array , entry) 
 		} 
@@ -52,15 +48,14 @@ func remove_dublicate_from_array(random_array []int) []int{
 }
 
 
-func the_sorted_array(sorted_array []int) []int{
-	// time_for_sorting := time.Now()
-	sort.Ints(sorted_array)
-	// fmt.Println(time.Since(time_for_sorting))
-	// fmt.Println(sorted_array)
+func the_sorted_array(sorted_array []int) []int{//this will make sorted array
+	sort.Ints(sorted_array)	
 	return sorted_array
-} //this will make sorted array
+} 
+
+
 // see how_it_works to know how this program works :) 
-func binary_search(array []int, target int) int{//(int, string, int)
+func binary_search(array []int, target int) int{
 	hops := 0
 	left := 0
 	right := len(array) - 1
