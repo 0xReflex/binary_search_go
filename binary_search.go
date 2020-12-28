@@ -24,7 +24,7 @@ func random_array(length_of_array int) []int { // this will make random array
 	var i int
 	var random_array []int
 	for true{
-		if i == length_of_array
+		if i == length_of_array{
 			return random_array
 		}else {
 			rand.Seed(time.Now().UnixNano() * int64(i))
